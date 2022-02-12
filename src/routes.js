@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 import ButtonPlus from "./components/ButtonPlus";
 
 import { FontAwesome, AntDesign } from "@expo/vector-icons";
+
 const Tab = createBottomTabNavigator();
 
 export default function Routes() {
@@ -20,7 +21,9 @@ export default function Routes() {
           },
           tabBarActiveTintColor: "white",
           tabBarInactiveTintColor: "grey",
+          headerShown: false,
         }}
+        options={{}}
       >
         <Tab.Screen
           name="Home"
