@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "./pages/Home";
 import New from "./pages/New";
-import Profile from "./pages/Profile";
+import Services from "./pages/Services";
 import ButtonPlus from "./components/ButtonPlus";
 
 import { FontAwesome, AntDesign } from "@expo/vector-icons";
@@ -23,7 +23,7 @@ export default function Routes() {
         }}
       >
         <Tab.Screen
-          name="Início"
+          name="Home"
           component={Home}
           options={{
             tabBarIcon: ({ size, color }) => (
@@ -42,8 +42,8 @@ export default function Routes() {
           }}
         />
         <Tab.Screen
-          name="Profile"
-          component={Profile}
+          name="Services"
+          component={Services}
           options={{
             tabBarIcon: ({ size, color }) => (
               <AntDesign name="appstore1" size={size} color={color} />

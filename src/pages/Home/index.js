@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Text>Home</Text>
-      <Text>Ta pegando bruna</Text>
       <StatusBar style="auto" />
     </View>
   );
